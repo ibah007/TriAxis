@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-red-300 to-customBlue text-white">
+      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-customBlue text-white dark:bg-gradient-to-b from-black to-red">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
