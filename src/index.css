@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-inter text-dark dark:text-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold leading-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  
+  .btn {
+    @apply px-6 py-3 font-medium rounded-md transition-all duration-300 inline-flex items-center justify-center;
+  }
+  
+  .btn-primary {
+    @apply bg-customBlue text-white hover:bg-customBlue focus:ring-4 focus:to-blue-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-customBlue text-white hover:bg-secondary-600 focus:ring-4 focus:ring-secondary-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-customBlue text-customBlue hover:bg-customBlue hover:text-white;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .card {
+    @apply bg-white dark:bg-dark border border-gray-200 dark:border-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply relative px-3 py-2 font-medium hover:text-customBlue transition-colors duration-300;
+  }
+
+  .nav-link.active {
+    @apply text-customBlue;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-customBlue;
+  }
+}
