@@ -16,7 +16,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            ONE STOP SOLUTIONS FOR ALL YOUR 
+            ONE STOP SOLUTION FOR ALL YOUR 
             <span className="text-customBlue"> ENGINEERING NEEDS</span>
           </motion.h1>
           

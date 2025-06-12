@@ -29,7 +29,7 @@ const Home = () => {
                 subtitle="Your trusted partner for all engineering solutions"
                 centered={false}
               />
-              <p className="mb-6 text-gray-600 dark:text-gray-300">
+              <p className="mb-6 text-justify text-gray-600 dark:text-gray-300">
                 TriAxis Technologies is a multidisciplinary engineering and
                  technology company , offering comprehensive solutions across
                   Electrical & Electronics, RF Systems, Mechanical Engineering, 
@@ -48,7 +48,7 @@ const Home = () => {
               <img 
                 src="/beemu.jpg" 
                 alt="Engineering Expertise" 
-                className="rounded-lg shadow-xl w-full h-80 "
+                className="rounded-lg shadow-xl w-full h-80 object-scale-down"
               />
               {/* <div className="absolute -bottom-5 -right-5 w-24 h-24 bg-primary-500 rounded-lg"></div> */}
             </div>

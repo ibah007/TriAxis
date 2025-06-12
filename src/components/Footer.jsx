@@ -75,6 +75,10 @@ const Footer = () => {
                 <MapPin size={20} className="mr-2 text-customBlue mt-1 flex-shrink-0" />
                 <span className="text-gray-400">Rohtas Complex, Mansehra Road, Abbottabad</span>
               </li>
+              <li className="flex items-start">
+                <MapPin size={20} className="mr-2 text-customBlue mt-1 flex-shrink-0" />
+                <span className="text-gray-400">Rohtas Complex, Mansehra Road, Abbottabad</span>
+              </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-customBlue flex-shrink-0" />
                 <span className="text-gray-400">+92 336 0543553</span>
