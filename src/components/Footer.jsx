@@ -73,12 +73,17 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-customBlue mt-1 flex-shrink-0" />
-                <span className="text-gray-400">Rohtas Complex, Mansehra Road, Abbottabad</span>
+                <span className="text-gray-400">29th St, Edmonton, AB,T6X 3E7</span>
+              </li>
+              <li className="flex items-center">
+                <Phone size={20} className="mr-2 text-customBlue flex-shrink-0" />
+                <span className="text-gray-400">+1(487)429-6586</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-customBlue mt-1 flex-shrink-0" />
                 <span className="text-gray-400">Rohtas Complex, Mansehra Road, Abbottabad</span>
               </li>
+              
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-customBlue flex-shrink-0" />
                 <span className="text-gray-400">+92 336 0543553</span>
