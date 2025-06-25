@@ -70,7 +70,9 @@ const About = () => {
         <div className="container">
           <SectionHeading 
             title="Our Vision" 
-            subtitle="To be a leading integrated solutions provider in engineering, RF systems, software, and technology, empowering clients with innovative and reliable solutions."
+            subtitle="To become a leading integrated solutions provider across engineering,
+             RF systems, software, and technology — empowering our clients with innovative,
+             dependable, and future-ready solutions."
           />
           
           <div className="max-w-3xl mx-auto">
@@ -82,10 +84,12 @@ const About = () => {
               transition={{ duration: 0.5 }}
             >
               <blockquote className="text-xl font-medium mb-6 text-gray-700 dark:text-gray-300">
-                "To be the foremost leader in providing comprehensive engineering solutions that transform ideas into reality, enhance quality of life, and contribute to a sustainable future."
+                "To lead the industry in delivering comprehensive engineering services that transform
+                 ideas into tangible realities, elevate the quality of life, and drive sustainable progress."
               </blockquote>
               <p className="text-gray-600 dark:text-gray-400">
-                We strive to be recognized globally for our technical expertise, innovative approach, and unwavering commitment to excellence in all engineering disciplines.
+                We aim to be recognized globally for our deep technical expertise, forward-thinking approach,
+                and unwavering dedication to excellence across all engineering disciplines.
               </p>
             </motion.div>
           </div>
