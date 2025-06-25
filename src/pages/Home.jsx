@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import Hero from '../components/Hero';
 import ServiceHighlights from '../components/ServiceHighlights';
 import SectionHeading from '../components/SectionHeading';
+import AnimatedBackground from "../components/AnimatedBackground";
 
 const Home = () => {
   return (
@@ -50,7 +51,6 @@ const Home = () => {
                 alt="Engineering Expertise" 
                 className="rounded-lg shadow-xl w-full h-80 object-scale-down"
               />
-              {/* <div className="absolute -bottom-5 -right-5 w-24 h-24 bg-primary-500 rounded-lg"></div> */}
             </div>
           </div>
         </div>
@@ -60,8 +60,11 @@ const Home = () => {
       <ServiceHighlights />
       
       {/* CTA Section */}
-      <section className="py-20 bg-customBlue text-white">
-        <div className="container text-center">
+      <section className="relative py-20 text-dark dark:text-white overflow-hidden">
+        {/* Animated background canvas */}
+        <AnimatedBackground className="absolute inset-0 -z-10" />
+
+        <div className="container text-center relative z-10">
           <motion.h2 
             className="text-3xl md:text-4xl font-bold mb-6"
             initial={{ opacity: 0, y: 20 }}
@@ -88,7 +91,10 @@ const Home = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Link to="/contact" className="btn bg-white text-customBlue hover:bg-gray-100 text-lg">
+            <Link
+              to="/contact"
+              className="btn bg-customBlue text-white hover:bg-blue-700 dark:bg-white dark:text-customBlue dark:hover:bg-gray-200 text-lg"
+            >
               Get in Touch
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
