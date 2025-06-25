@@ -51,8 +51,8 @@ const Services = () => {
           >
             <h1 className="mb-6">Explore Our Services</h1>
             <p className="text-xl">
-              We offer a comprehensive range of engineering solutions to
-              meet all your project requirements.
+              Discover a full spectrum of tailored engineering solutions 
+              designed to meet your unique project needs with precision and efficiency.
             </p>
           </motion.div>
         </div>
@@ -64,7 +64,7 @@ const Services = () => {
         <div className="container">
           <SectionHeading 
             title="Core Services" 
-            subtitle="We provide end-to-end engineering solutions."
+            subtitle="Delivering integrated, end-to-end solutions across engineering, software, and technology domains."
           />
           
           <ServiceFilter />
