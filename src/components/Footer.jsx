@@ -23,10 +23,10 @@ const Footer = () => {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-customBlue transition-colors">
                 <Facebook size={20} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-customBlue transition-colors">
+              <a href="https://www.instagram.com/triaxis_technologies?igsh=MXc2cG1lMHU4dWs2Zg==" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-customBlue transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-customBlue transition-colors">
+              <a href="https://www.linkedin.com/company/triaxis-tech/" target="_blank" rel="noopener noreferrer" className="text-gray-500 dark:text-gray-400 hover:text-customBlue transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>

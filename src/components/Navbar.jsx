@@ -64,7 +64,15 @@ const Navbar = () => {
                 <NavLink
                   key={link.path}
                   to={link.path}
-                  className={({ isActive }) => `text-customBlue hover:text-customBlue dark:text-customBlue nav-link ${isActive ? 'font-bold' : ''}`}
+                  className={({ isActive }) =>
+                  `nav-link text-customBlue dark:text-customBlue transition-all duration-300 transform ${
+                    isActive
+                      ? 'font-bold underline'
+                      : 'hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 hover:underline'
+                  }`
+                }
+
+
                 >
                   {link.label}
                 </NavLink>
