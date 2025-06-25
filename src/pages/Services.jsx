@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'react-router-dom';
+import AnimatedBackground from "../components/AnimatedBackground";
 
 // Components
 import SectionHeading from '../components/SectionHeading';
@@ -39,8 +40,9 @@ const Services = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-customBlue text-white">
-        <div className="container">
+      <section className="relative pt-32 pb-20 text-dark dark:text-light overflow-hidden">
+        <AnimatedBackground />
+        <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -50,11 +52,12 @@ const Services = () => {
             <h1 className="mb-6">Explore Our Services</h1>
             <p className="text-xl">
               We offer a comprehensive range of engineering solutions to
-               meet all your project requirements.
+              meet all your project requirements.
             </p>
           </motion.div>
         </div>
       </section>
+
       
       {/* Services Section */}
       <section className="section">

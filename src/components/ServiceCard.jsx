@@ -4,7 +4,7 @@ import * as Icons from 'lucide-react';
 
 const ServiceCard = ({ title, description, icon, index }) => {
   const Icon = Icons[icon] || Icons.Activity;
-  
+
   return (
     <motion.div
       className="card h-full group hover:shadow-lg dark:hover:shadow-primary-900/20"
@@ -19,7 +19,12 @@ const ServiceCard = ({ title, description, icon, index }) => {
           <Icon className="text-white" size={24} />
         </div>
         <h3 className="text-xl font-semibold mb-3 group-hover:text-customBlue transition-colors">{title}</h3>
-        <p className="text-gray-600 dark:text-gray-300 flex-grow">{description}</p>
+
+        <ul className="list-disc pl-5 space-y-1 text-gray-600 dark:text-gray-300 text-sm flex-grow">
+          {description.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
       </div>
     </motion.div>
   );

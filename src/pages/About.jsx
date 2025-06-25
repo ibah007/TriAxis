@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 // Components
 import SectionHeading from '../components/SectionHeading';
 import AboutContent from '../components/AboutContent';
+import AnimatedBackground from "../components/AnimatedBackground";
+
 
 const About = () => {
   const timeline = [
@@ -37,9 +39,9 @@ const About = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-customBlue text-white">
-      {/* <section className='pt-32 pb-20 '> */}
-        <div className="container">
+      <section className="relative pt-32 pb-20 text-dark dark:text-light overflow-hidden">
+        <AnimatedBackground />
+        <div className="container relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -53,6 +55,8 @@ const About = () => {
           </motion.div>
         </div>
       </section>
+
+
       
       {/* Company Overview */}
       <section className="section bg-light dark:bg-dark">

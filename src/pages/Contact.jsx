@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AnimatedBackground from '../components/AnimatedBackground'; // adjust path if needed
 
 // Components
 import SectionHeading from '../components/SectionHeading';
@@ -10,23 +11,29 @@ const Contact = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-white to-customBlue text-white dark:bg-gradient-to-b from-black to-red">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <h1 className="mb-6">Why Choose Us</h1>
-            <p className="text-xl">
-              Experienced multi-disciplinary team <br />
-              Strong portfolio in defense and industrial sectors <br />
-              Transparent processes and reliable support
-            </p>
-          </motion.div>
-        </div>
-      </section>
+
+
+<section className="relative pt-32 pb-20 text-dark dark:text-light overflow-hidden">
+  {/* Animated canvas background */}
+  <AnimatedBackground />
+
+  <div className="container relative z-10">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      className="max-w-3xl mx-auto text-center"
+    >
+      <h1 className="mb-6">Why Choose Us</h1>
+      <p className="text-xl">
+        Experienced multi-disciplinary team <br />
+        Strong portfolio in defense and industrial sectors <br />
+        Transparent processes and reliable support
+      </p>
+    </motion.div>
+  </div>
+</section>
+
       
       {/* Contact Info Section */}
       <section className="section bg-light dark:bg-dark">

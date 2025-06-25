@@ -21,7 +21,7 @@ const Hero = () => {
           </motion.h1>
           
           <motion.p 
-            className="text-lg md:text-xl mb-8 opacity-90"
+            className="text-lg md:text-xl text-justify mb-8 opacity-90"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
