@@ -5,33 +5,65 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 const ContactInfo = () => {
   const contactDetails = [
     {
-      icon: <Phone size={24} className="text-customBlue" />,
-      title: 'Phone',
-      details: ['+92 336 0543553'],
-      href: 'tel:+923360543553',
+      title: 'Canada Office',
+      items: [
+        {
+          icon: <Phone size={24} className="text-customBlue" />,
+          label: 'Phone',
+          detail: '+1 (587) 429-6586',
+          href: 'tel:+15874296586',
+        },
+        {
+          icon: <MapPin size={24} className="text-customBlue" />,
+          label: 'Address',
+          detail: '29th St, Edmonton, AB, T6X 3E7, Canada',
+          href: 'https://maps.google.com/?q=29th+St,+Edmonton,+AB,+T6X+3E7,+Canada',
+        },
+      ],
     },
     {
-      icon: <Mail size={24} className="text-customBlue" />,
+      title: 'Pakistan Office',
+      items: [
+        {
+          icon: <Phone size={24} className="text-customBlue" />,
+          label: 'Phone',
+          detail: '+92 336 0543553',
+          href: 'tel:+923360543553',
+        },
+        {
+          icon: <MapPin size={24} className="text-customBlue" />,
+          label: 'Address',
+          detail: 'Rohtas Complex, Mansehra Road, Abbottabad',
+          href: 'https://maps.google.com/?q=Rohtas+Complex,+Mansehra+Road,+Abbottabad',
+        },
+      ],
+    },
+    {
       title: 'Email',
-      details: ['info@triaxistech.com'],
-      href: 'mailto:info@triaxistech.com',
+      items: [
+        {
+          icon: <Mail size={24} className="text-customBlue" />,
+          label: 'Email',
+          detail: 'info@triaxistech.com',
+          href: 'mailto:info@triaxistech.com',
+        },
+      ],
     },
     {
-      icon: <MapPin size={24} className="text-customBlue" />,
-      title: 'Address',
-      details: ['Rohtas Complex, Mansehra Road, Abbottabad'],
-      href: 'https://maps.google.com/?q=Rohtas+Complex,+Mansehra+Road,+Abbottabad',
-    },
-    {
-      icon: <Clock size={24} className="text-customBlue" />,
       title: 'Working Hours',
-      details: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 9:00 AM - 2:00 PM'],
+      items: [
+        {
+          icon: <Clock size={24} className="text-customBlue" />,
+          label: 'Hours',
+          detail: 'Mon - Fri: 9:00 AM - 6:00 PM\nSat: 9:00 AM - 2:00 PM',
+        },
+      ],
     },
   ];
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {contactDetails.map((item, index) => (
+      {contactDetails.map((section, index) => (
         <motion.div
           key={index}
           className="card hover:shadow-lg dark:hover:shadow-primary-900/20 transition-all duration-300"
@@ -40,27 +72,32 @@ const ContactInfo = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.4, delay: index * 0.1 }}
         >
-          <div className="p-6 flex items-start">
-            <div className="mr-4">{item.icon}</div>
-            <div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              {item.details.map((detail, i) => (
-                <p key={i} className="text-gray-600 dark:text-gray-300">
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-4">{section.title}</h3>
+            {section.items.map((item, i) => (
+              <div key={i} className="flex items-start mb-3">
+                <div className="mr-4">{item.icon}</div>
+                <div>
+                  <h4 className="font-medium">{item.label}</h4>
                   {item.href ? (
-                    <a 
-                      href={item.href} 
-                      className="hover:text-customBlue transition-colors"
-                      target={item.href.startsWith('https') ? '_blank' : undefined}
-                      rel={item.href.startsWith('https') ? 'noopener noreferrer' : undefined}
+                    <a
+                      href={item.href}
+                      className="text-gray-600 dark:text-gray-300 hover:text-customBlue transition-colors"
+                      target={item.href.startsWith('http') ? '_blank' : undefined}
+                      rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     >
-                      {detail}
+                      {item.detail}
                     </a>
                   ) : (
-                    detail
+                    item.detail.split('\n').map((line, idx) => (
+                      <p key={idx} className="text-gray-600 dark:text-gray-300">
+                        {line}
+                      </p>
+                    ))
                   )}
-                </p>
-              ))}
-            </div>
+                </div>
+              </div>
+            ))}
           </div>
         </motion.div>
       ))}
