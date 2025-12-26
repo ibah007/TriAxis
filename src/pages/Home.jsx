@@ -45,11 +45,11 @@ const Home = () => {
             </Link>
             </div>
             
-            <div className="relative">
+            <div className="rounded-lg overflow-hidden shadow-xl">
               <img 
                 src="/beemu.jpg" 
                 alt="Engineering Expertise" 
-                className="rounded-lg shadow-xl w-full h-80 object-scale-down"
+                className="w-full h-90 object-cover"
               />
             </div>
           </div>

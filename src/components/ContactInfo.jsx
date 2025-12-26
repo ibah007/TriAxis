@@ -33,9 +33,10 @@ const ContactInfo = () => {
         {
           icon: <MapPin size={24} className="text-customBlue" />,
           label: 'Address',
-          detail: 'Rohtas Complex, Mansehra Road, Abbottabad',
-          href: 'https://maps.google.com/?q=Rohtas+Complex,+Mansehra+Road,+Abbottabad',
-        },
+          detail: 'Islamabad, Pakistan',
+         // href: 'https://maps.google.com/?q=G14,+Islamabad+Pakistan',
+         },
+        // href: 'https://maps.google.com/?q=Rohtas+Complex,+Mansehra+Road,+Abbottabad',
       ],
     },
     {

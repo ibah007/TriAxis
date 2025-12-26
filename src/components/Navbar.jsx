@@ -65,12 +65,14 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   className={({ isActive }) =>
-                  `nav-link text-customBlue dark:text-customBlue transition-all duration-300 transform ${
-                    isActive
-                      ? 'font-bold underline'
-                      : 'hover:text-blue-600 dark:hover:text-blue-400 hover:scale-110 hover:underline'
-                  }`
-                }
+                    `nav-link text-customBlue dark:text-customBlue no-underline decoration-none transition-all duration-200 transform ${
+                      isActive
+                        ? 'font-bold text-[1.08rem]'
+                        : 'hover:text-customBlue dark:hover:text-blue-400 hover:scale-125'
+                    }`
+                  }
+
+
 
 
                 >

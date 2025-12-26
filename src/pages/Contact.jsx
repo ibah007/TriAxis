@@ -65,7 +65,7 @@ const Contact = () => {
       {/* Map Section */}
       <section className="space-y-10 my-10">
         {/* Canada Office */}
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-bold mb-4 text-center">Canada Office</h2>
           <div className="h-96 w-full rounded-lg overflow-hidden shadow-md">
             <iframe
@@ -77,10 +77,10 @@ const Contact = () => {
               aria-label="Map showing TriAxis Canada Office"
             ></iframe>
           </div>
-        </div>
+        </div> */}
 
         {/* Pakistan Office */}
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-bold mb-4 text-center">Pakistan Office</h2>
           <div className="h-96 w-full rounded-lg overflow-hidden shadow-md">
             <iframe
@@ -92,7 +92,7 @@ const Contact = () => {
               aria-label="Map showing TriAxis Pakistan Office"
             ></iframe>
           </div>
-        </div>
+        </div> */}
       </section>
 
     </>
